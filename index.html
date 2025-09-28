@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Space Zone </title>
+  <!-- CSS & Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <!-- Website Icon -->
+  <link rel="shortcut icon" href="images/icon-2.png"  type="image/x-icon">
+</head>
+<body>
+  <!-- Start Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid g-0 pe-2">
+        <a class="navbar-brand text-primary fw-bolder fs-1 " href="#"><img src="images/icon-2.png" class="rounded-circle logo" alt="Icon of the Website" style="width: 100px; height: 100px;"><span class="icon-ex"> Space Zone </span></a>
+        <!-- Toggle menu in media queries -->
+        <div class="bg-light mx-3 d-none d-md-block" style="width: 1px;height: 70px;"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link border rounded border-dark  text-light" aria-current="page" href="#"> home </a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="nav-link border rounded border-dark text-light" href="#"> about us </a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0 dropdown">
+                <a class="nav-link border rounded border-dark text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: -3px;"> <span class="special"> m</span>enu </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> space </a></li>
+                  <li><a class="dropdown-item" href="#"> planets </a></li>
+                  <!-- Line Break -->
+                  <li> <hr class="dropdown-divider"> </li>
+                  <li><a class="dropdown-item" href="#"> planet martian </a></li>
+                  <li><a class="dropdown-item" href="#"> planet saturn </a></li>
+                  <li><a class="dropdown-item" href="#"> planet Earth </a></li>
+                  <li><a class="dropdown-item" href="#"> more.. </a></li>
+                </ul>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <a class="nav-link border rounded border-dark text-light" href="#"> contact us </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+            <button class="btn special-btn-1 btn-primary" type="submit"> Search </button>
+          </form>
+          <button type="button" class="btn special-btn-2 btn-outline-primary ms-lg-2 mt-2 mt-lg-0" data-bs-toggle="modal" data-bs-target="#loginModal"> Log in </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Log in window -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-2" id="loginModalLabel"> Log in </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> <!-- /modal-header -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"> Email address </label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label"> Password </label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe"> Remember me </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100"> Log in </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Landong Page (Section 1) -->
+  <main>
+    <!-- Start Land Photo Section -->
+    <section class="hero">
+      <div class="container-fluid p-0">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <!-- Bootstrap Carousel ==> To navigate between pages -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <!-- Pages -->
+          <div class="carousel-inner">
+            <div class="carousel-item active vh-100">
+              <img src="images/back-1.jpg" class="d-block w-100 h-100  hero-img" alt="...">
+              <div class="carousel-caption  d-block main-content rounded-1 p-2 p-md-4 mb-3 border border-light">
+                <h5 class="text-uppercase"> United States at Night from Space </h5>
+                <p class="text-capitalize"> A breathtaking satellite view showing the glowing web of city lights across the United States, highlighting the vibrant energy of its urban centers. </p>
+                <button class="btn btn-outline-primary"> More information... </button>
+              </div>
+            </div>
+            <div class="carousel-item vh-100">
+              <img src="images/back-2.jpg" class="d-block w-100 h-100 hero-img" alt="...">
+              <div class="carousel-caption d-block main-content rounded-1 p-2 p-md-4 mb-3 border border-light">
+                <h5 class="text-uppercase"> Cosmic Technology </h5>
+                <p class="text-capitalize"> A futuristic PC cooling system glowing like spacecraft circuits, resembling the lifelines that power astronauts’ journeys through the vastness of space. </p>
+                <button class="btn btn-outline-primary"> More information... </button>
+              </div>
+            </div>
+            <div class="carousel-item vh-100">
+              <img src="images/back-3.jpg" class="d-block w-100 h-100 hero-img" alt="...">
+              <div class="carousel-caption d-block main-content rounded-1 p-2 p-md-4 mb-3 border border-light">
+                <h5 class="text-uppercase"> Galactic Commands </h5>
+                <p class="text-capitalize"> A glowing red keyboard, like a control panel guiding astronauts through the infinite darkness of space. </p>
+                <button class="btn btn-outline-primary"> More information... </button>
+              </div>
+            </div>
+            <div class="carousel-item vh-100">
+              <img src="images/back-4.jpg" class="d-block w-100 h-100 hero-img" alt="...">
+              <div class="carousel-caption d-block main-content rounded-1 p-2 p-md-4 mb-3 border border-light">
+                <h5 class="text-uppercase"> Cosmic Sparks of Imagination </h5>
+                <p class="text-capitalize"> A silent lightbulb glows like an astronaut’s mind adrift in space, where streams of blue energy resemble stardust trails guiding humanity toward discovery. </p>
+                <button class="btn btn-outline-primary"> More information... </button>
+              </div>
+            </div>
+          </div>
+          <!-- left arrow -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <!-- right arrow -->
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Land Photo Section -->
+    <!-- Start Social icons -->
+    <div class="d-flex flex-column position-fixed top-50 end-0  translate-middle-y me-2  g-3 social-icons-container">
+        <a href="#" class="p-0 social-icons fs-1 text-primary opacity-75"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="p-0 social-icons fs-1 text-primary opacity-75"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" class="p-0 social-icons fs-1 text-primary opacity-75"><i class="fab fa-whatsapp-square"></i></a>
+        <a href="#" class="p-0 social-icons fs-1 text-primary opacity-75"><i class="fab fa-instagram-square"></i></a>
+        <a href="#" class="p-0 social-icons fs-1 text-primary opacity-75"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <!-- End Social icons -->
+    <!-- Start Welcome Message -->
+    <section class="welcome" style="margin-top: 20px;">
+      <div class="p-3 text-white" style="background: linear-gradient(to bottom, #2C3E50, #0f141a);">
+        <h2 class="fw-bold text-primary"> Welcome </h2>
+        <p class="mb-4"> Welcome to our space journey! Step into the vast universe where planets, stars, and galaxies await your curiosity. Together, we’ll uncover cosmic wonders, explore mysteries beyond the stars, and spark your imagination about the endless skies above. </p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </section>
+    <!-- End Welcome Message -->
+    <hr>
+    <!-- Start Famous Section -->
+    <section class="famous">
+      <div class="container-fluid text-center text-light p-5 text-capitalize rounded-1 border border-dark" style="background-color: #1a242e;">
+        <h2 class="fst-italic fw-bold"> the most famous discoveries in our universe </h2>
+      </div>
+      <div class="container-fluid p-0 mt-4">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item rounded-3">
+            <h2 class="accordion-header "  id="headingOne">
+              <button class="accordion-button collapsed fs-4 text-capitalize fst-italic rounded-3" style="color: #fff; background-color: #1a242e;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> Exploring the Planets </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                From Mars to Saturn, scientists continue studying planets to understand their composition and mysteries. <br>
+                Each world holds clues about the past and the potential future of life in the universe.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item rounded-3">
+            <h2 class="accordion-header "  id="headingTwo">
+              <button class="accordion-button collapsed fs-4 text-capitalize fst-italic rounded-3" style="color: #fff; background-color: #1a242e;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> The Secrets of Galaxies </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Billions of galaxies stretch across the cosmos, each filled with stars, planets, and complex systems. <br>
+                Studying galaxies helps us uncover the origins and evolution of the universe.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item rounded-3">
+            <h2 class="accordion-header "  id="headingThree">
+              <button class="accordion-button collapsed fs-4 text-capitalize fst-italic rounded-3" style="color: #fff; background-color: #1a242e;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Human Journeys into Space </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Since the first step on the Moon, space has become a frontier for exploration. <br>
+                Modern space technology is paving the way for a future where humans may live among the stars.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Famous Section -->
+    <hr>
+    <!-- Start Translation Section -->
+    <section class="translate">
+        <div class="container-fluid p-0">
+          <div class=" text-center text-light p-4 text-capitalize rounded-1 border border-dark" style="background-color: #1a242e;">
+            <h2 class="fst-italic"> translate from arabic to english </h2>
+          </div>
+          <div class="py-3 px-2 px-md-3" style="background: linear-gradient(to bottom, #2C3E50, #0f141a);">
+            <h3 class="text-light text-capitalize fs-4"> write and translate <a href="#" class="text-primary text-decoration-none"> press here </a></h3>
+          <div>
+          <!-- Button trigger modal -->
+          <div>
+            <button type="button" class="btn btn-primary px-4 copy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> copy </button>
+            <span class="bg-light rounded-pill px-2 py-1 d-none text-center copied-msg "> Copied! </span>
+          </div>
+          <div class="form-floating mt-3 mb-2">
+            <textarea class="form-control " placeholder="" id="translateBox"  style="height: 120px"></textarea>
+            <label for="translateBox"> Translate: </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Area -->
+    <div class="modal modal-sm fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4 text-primary fst-italic" id="exampleModalLabel"> Space Zone </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            the message copied
+            <div class="mt-4 text-end ">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Ok </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid p-0">
+      <div class=" text-center text-light p-4 text-capitalize rounded-1 border border-dark" style="background-color: #2C3E50;">
+        <h2 class="fst-italic"> translate from arabic to frensh </h2>
+      </div>
+      <div class="py-3 px-2 px-md-3" style="background: linear-gradient(to bottom, #2C3E50, #0f141a);">
+        <h3 class="text-light text-capitalize h4"> write and translate <a href="#" class="text-primary text-decoration-none"> press here </a></h3>
+        <div>
+          <div>
+            <button type="button" class="btn btn-primary px-4 copy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> copy </button>
+            <span class="bg-light rounded-pill px-2 py-1 d-none text-center copied-msg "> Copied! </span>
+          </div>
+          <div class="form-floating mt-3 mb-2">
+            <textarea class="form-control " placeholder="" id="translateBox" style="height: 120px"></textarea>
+            <label for="translateBox"> Translate: </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-sm fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4 text-warning fst-italic" id="exampleModalLabel"> Space Zone </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            the message copied
+            <div class="mt-4 text-end ">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Ok </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid p-0">
+      <div class=" text-center text-light p-4 text-capitalize rounded-1 border border-dark" style="background-color: #2C3E50;">
+        <h2 class="fst-italic"> translate from arabic to german </h2>
+      </div>
+      <div class="py-3 px-2 px-md-3" style="background: linear-gradient(to bottom, #2C3E50, #0f141a);">
+        <h3 class="text-light text-capitalize h4">write and translate <a href="#" class="text-primary text-decoration-none"> press here </a></h3>
+        <div>
+          <div>
+            <button type="button" class="btn btn-primary px-4 copy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> copy </button>
+            <span class="bg-light rounded-pill px-2 py-1 d-none text-center copied-msg "> Copied! </span>
+          </div>
+          <div class="form-floating mt-3 mb-2">
+            <textarea class="form-control " placeholder="" id="translateBox" style="height: 120px"></textarea>
+            <label for="translateBox">Translate:</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-sm fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4 text-warning fst-italic" id="exampleModalLabel"> Space Zone </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            the message copied
+            <div class="mt-4 text-end ">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Ok </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Translation Section -->
+  <hr>
+  <!-- Start Fixed Image 1 -->
+  <section class="fixed-image">
+    <div class="container-fluid p-0 bg-image">
+    </div>
+  </section>
+  <!-- End Fixed Image 1 -->
+  <!-- Start Popular Section -->
+    <section class="popular">
+      <div class="container-fluid p-0 mt-5">
+        <div class=" text-center text-light p-4 text-capitalize rounded-1 border border-dark"
+          style="background-color: #2C3E50;">
+          <h2 class="fst-italic h3">.. Popular and Famous Sights in Space ..</h2>
+        </div>
+        <div class="container px-3 px-md-1">
+          <div class="row gx-4 justify-content-evenly">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes" style="height: 550px;" >
+                <img src="images/img-1.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic "> Distant Planets </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0  show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Explore planets far away from Earth </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes"  style="height: 550px;" >
+                <img src="images/img-2.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic " > Secrets of the Universe </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0  show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Discover the hidden mysteries beyond our world </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes" style="height: 550px;" >
+                <img src="images/img-3.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic "> Stars and Galaxies </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0  show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Learn about the stars and vast galaxies in space </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes" style="height: 550px;" >
+                <img src="images/img-4.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic "> Journey to Mars </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0  show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Follow the missions traveling to the Red Planet </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes"  style="height: 550px;" >
+                <img src="images/img-5.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic "> Black Holes </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0  show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Understand the powerful forces of black holes </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes"  style="height: 550px;" >
+                <img src="images/img-6.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic "> Exoplanets </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0  show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Study planets that orbit other stars. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes"  style="height: 550px;" >
+                <img src="images/img-7.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic "> Longest Space Voyage </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0 show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Read about the longest trips in space. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+              <div class="card  w-100 mt-4 dishes"  style="height: 550px;" >
+                <img src="images/img-8.jpg" class="card-img-top px-2 rounded-top-1" alt="..." style="height: 400px;">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-primary fst-italic "> Life Beyond Earth </h5>
+                  <div class="container text-end mb-2 position-relative" style="height: 40px;">
+                    <a href="#" class="btn btn-primary fs-6 px-4 me-2 position-absolute top-0 end-0 show-btn">SHOW</a>
+                  </div>
+                  <p class="card-text text-center text-md-start"> Investigate the possibility of life elsewhere. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Popular Section -->
+    <!-- Start Fixed Image 2 -->
+    <section class="fixed-image-2">
+        <div class="container-fluid p-0 mt-5 bg-image2"></div>
+    </section>
+    <!-- End Fixed Image 2 -->
+    <hr>
+    <!-- Start thanks Section -->
+    <section class="thanks">
+      <div class="container-fluid p-0 mb-5">
+        <div class=" text-center text-light p-3 text-capitalize rounded-1 border border-dark mb-5" style="background-color: #2C3E50;">
+          <h2 class="fst-italic fw-bolder h2">.. thanks for ..</h2>
+        </div>
+        <div class="container-md px-0 px-md-1">
+          <div class="row gx-0 gx-md-5 justify-content-evenly">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card text-bg-dark rounded-5 position-relative mx-auto overflow-hidden w-75 scale" >
+                <img src="images/space-1.jpg" class="card-img rounded-5 img-fluid " alt="...">
+                <div class="card-img-overlay bg-black bg-opacity-50 text-capitalize rounded-5 overlay">
+                  <h5 class="card-title fs-6 fst-italic opacity-75"> all thanks and appreciation </h5>
+                  <p class="card-text opacity-75"><i class="fas fa-clock"></i> June 22 2025</p>
+                  <div class="card bg-transparent border-0 position-absolute bottom-0 start-0 ps-3 pb-1 w-100 inner-card" style="width: 10rem;">
+                    <img src="images/space-1.jpg" class="card-img-top rounded-pill  " style="width: 100px;" alt="...">
+                    <div class="card-body ps-0 pt-1">
+                      <h5 class="card-title fs-6"> Eng. Ahmed Adel </h5>
+                      <p class="card-text fs-6"> Aerospace Engineer </p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div> 
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card text-bg-dark rounded-5 position-relative mx-auto overflow-hidden w-75 scale" >
+                <img src="images/space-2.jpg" class="card-img rounded-5 img-fluid " alt="...">
+                <div class="card-img-overlay bg-black bg-opacity-50 text-capitalize rounded-5 overlay">
+                  <h5 class="card-title fs-6 fst-italic opacity-75">all thanks and appreciation</h5>
+                  <p class="card-text opacity-75"><i class="fas fa-clock"></i> June 22 2025</p>
+                  <div class="card bg-transparent border-0 position-absolute bottom-0 start-0 ps-3 pb-1 w-100 inner-card" style="width: 10rem;">
+                    <img src="images/space-2.jpg" class="card-img-top rounded-pill  " style="width: 100px;" alt="...">
+                    <div class="card-body ps-0 pt-1">
+                      <h5 class="card-title fs-6"> Eng. Mohamed Hamdy </h5>
+                      <p class="card-text fs-6"> Propulsion Engineer </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card text-bg-dark rounded-5 position-relative mx-auto overflow-hidden w-75 scale" >
+              <img src="images/space-3.jpg" class="card-img rounded-5 img-fluid " alt="...">
+                <div class="card-img-overlay bg-black bg-opacity-50 text-capitalize rounded-5 overlay">
+                  <h5 class="card-title fs-6 fst-italic opacity-75">all thanks and appreciation</h5>
+                  <p class="card-text opacity-75"><i class="fas fa-clock"></i> June 22 2025</p>
+                  <div class="card bg-transparent border-0 position-absolute bottom-0 start-0 ps-3 pb-1 w-100 inner-card" style="width: 10rem;">
+                    <img src="images/space-3.jpg" class="card-img-top rounded-pill  " style="width: 100px;" alt="...">
+                    <div class="card-body ps-0 pt-1">
+                      <h5 class="card-title fs-6"> Eng. Omier Ahmed </h5>
+                      <p class="card-text fs-6"> Satellite Systems Engineer </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End thanks Section -->
+    <!-- Start News Section -->
+    <section class="news">
+      <div class="container-md mb-5 px-1">
+        <div class=" text-center p-3 text-capitalize  mb-5" style="color: #2C3E50;">
+          <h2 class=" fw-bold h1 "> Space news </h2>
+        </div>
+        <div class="card mb-5 w-100 px-2 shadow news-card" >
+          <div class="row g-0 ">
+            <div class="col-md-8 col-12 order-2 order-md-1">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title h3 fst-italic text-capitalize " style="color :#2C3E50;"> United States </h5>
+                <p class="card-text text-muted text-capitalize"> United States at Night from Space </p>
+                <div class="progress mb-2 ms-2" style="height: 6px; width: 15%;">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="card-text"> A breathtaking satellite view showing the glowing web of city lights across the United States, highlighting the vibrant energy of its urban centers. </p>
+                <div class="mt-auto btns">
+                  <button class="btn btn-primary shadow " ><i class="fas fa-globe-africa"></i> See More... </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 overflow-hidden position-relative order-1 order-md-2 news-image-div-right">
+              <img src="images/back-1.jpg" class="img-fluid news-image" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="card mb-5 w-100 px-2 shadow news-card" >
+          <div class="row g-0">
+            <div class="col-md-4 col-12 overflow-hidden position-relative news-image-div-left">
+              <img src="images/back-2.jpg" class="img-fluid news-image" alt="...">
+            </div>
+            <div class="col-md-8 col-12">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title h3 fst-italic text-capitalize" style="color :#2C3E50;"> Cosmic Technology </h5>
+                <p class="card-text text-muted text-capitalize"> Cosmic Technology in space </p>
+                <div class="progress mb-2 ms-2" style="height: 6px; width: 15%;">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="card-text"> A futuristic PC cooling system glowing like spacecraft circuits, resembling the lifelines that power astronauts’ journeys through the vastness of space. </p>
+                <div class="mt-auto btns">
+                  <button class="btn btn-primary shadow "><i class="fas fa-globe-africa"></i> See More... </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-5 w-100 px-2 shadow news-card" >
+          <div class="row g-0">
+            <div class="col-md-8 col-12 order-2 order-md-1">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title h3 fst-italic text-capitalize" style="color :#2C3E50;"> Galactic Commands </h5>
+                <p class="card-text text-muted text-capitalize"> Galactic Commands in space </p>
+                <div class="progress mb-2 ms-2" style="height: 6px; width: 15%;">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="card-text"> A glowing red keyboard, like a control panel guiding astronauts through the infinite darkness of space. </p>
+                <div class="mt-auto btns">
+                  <button class="btn btn-primary shadow "><i class="fas fa-globe-africa"></i> See More... </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 overflow-hidden position-relative order-1 order-md-2 news-image-div-right">
+              <img src="images/back-3.jpg" class="img-fluid news-image" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="card mb-5 w-100 px-2 shadow news-card" >
+          <div class="row g-0">
+            <div class="col-md-4 col-12 overflow-hidden position-relative news-image-div-left">
+              <img src="images/back-4.jpg" class="img-fluid news-image " alt="...">
+            </div>
+            <div class="col-md-8 col-12">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title h3 fst-italic text-capitalize" style="color :#2C3E50;"> Cosmic Sparks </h5>
+                <p class="card-text text-muted text-capitalize"> Cosmic Sparks of Imagination </p>
+                <div class="progress mb-2 ms-2" style="height: 6px; width: 15%;">
+                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="card-text"> A silent lightbulb glows like an astronaut’s mind adrift in space, where streams of blue energy resemble stardust trails guiding humanity toward discovery. </p>
+                <div class="mt-auto btns">
+                  <button class="btn btn-primary shadow "><i class="fas fa-globe-africa"></i> See More... </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End News Section -->
+    <!-- Start Social Section -->
+    <section class="social-media">
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-evenly g-4 g-lg-0 mt-5 mt-md-0">
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card mx-auto shadow border border-dark social-card" style="width: 13rem; height: 13rem;">
+              <div class="card-body text-capitalize text-center d-flex flex-column justify-content-between align-items-center">
+                <h5 class="card-title fst-italic" style="color : #2C3E50;"> Follow Now </h5>
+                <i class="fab fa-facebook-square" style="font-size: 100px; color: #0d3d91;" class="card-img w-50"></i>
+                <div class="link mt-auto">
+                  <a href="#" class="fs-5 btn-link">Go to link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card mx-auto shadow border border-dark social-card" style="width: 13rem; height: 13rem;">
+              <div class="card-body text-capitalize text-center d-flex flex-column justify-content-between align-items-center">
+                <h5 class="card-title fst-italic" style="color : #2C3E50;"> Follow Now </h5>
+                <i class="fab fa-whatsapp-square" style="font-size: 100px; color: #5aa12b;" class="card-img w-50"></i>
+                <div class="link mt-auto">
+                  <a href="#" class="fs-5 btn-link">Go to link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card mx-auto shadow border border-dark social-card" style="width: 13rem; height: 13rem;">
+              <div class="card-body text-capitalize text-center d-flex flex-column justify-content-between align-items-center">
+                <h5 class="card-title fst-italic" style="color : #2C3E50;"> Follow Now </h5>
+                <i class="fab fa-youtube" style="font-size: 100px; color: #ee1111;" class="card-img w-50"></i>
+                <div class="link mt-auto">
+                  <a href="#" class="fs-5 btn-link">Go to link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="card mx-auto shadow border border-dark social-card" style="width: 13rem; height: 13rem;">
+              <div class="card-body text-capitalize text-center d-flex flex-column justify-content-between align-items-center">
+                <h5 class="card-title fst-italic" style="color : #2C3E50;"> Follow Now </h5>
+                <i class="fab fa-linkedin" style="font-size: 100px; color: #0d3d91;" class="card-img w-50"></i>
+                <div class="link mt-auto">
+                  <a href="#" class="fs-5 btn-link">Go to link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Social Section -->
+    </main>
+    <!-- Start Footer -->
+    <footer>
+      <div class="container-fluid bg-dark pt-5 pb-2 px-0">
+      <div class="w-100 bg-secondary mt-2 mb-4" style="height: 1px;"></div>
+      <div class="container-fluid p-0">
+      <div class="row g-0">
+      <div class="col-12 col-md-6 col-lg-4 text-capitalize text-light">
+        <div class=" d-flex justify-content-center flex-column align-items-center flex-md-row">
+        <img src="images/icon-2.png" style="width: 100px;" alt="">
+        <h5 class="align-content-center ms-2 fst-italic fs-2"> good company </h5>
+      </div>
+      <div class="w-100 bg-secondary mt-4 mb-4 d-none d-lg-block" style="height: 1px;"></div>
+        <div class="list">
+        <ul class="list-unstyled text-capitalize text-light text-center">
+          <li class="mb-3"> tel : 000-000-000 </li>
+          <li class="mb-3"> address : EGYPT </li>
+          <li class=""> fax : 000-000-000 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-100 bg-secondary mt-4 mb-4 d-block d-lg-none" style="height: 1px;"></div>
+    <div class="col-12 col-md-6 col-lg-4 text-capitalize text-light ">
+      <div class="d-flex justify-content-center flex-column align-items-center flex-md-row">
+        <img src="images/icon-2.png" style="width: 100px;" alt="">
+        <h5 class="align-content-center ms-2 fst-italic fs-2"> important links </h5>
+      </div>
+      <div class="w-100 bg-secondary mt-4 mb-4 d-none d-lg-block" style="height: 1px;"></div>
+        <div class="list">
+          <ul class="list-unstyled text-capitalize text-center">
+            <li class="mb-3"><a class="text-primary" href="#"> visit us </a></li>
+            <li class="mb-3"><a class="text-primary" href="#"> take a look </a></li>
+            <li class=""><a class="text-primary" href="#"> your health is more important </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-100 bg-secondary mt-4 mb-4 d-block d-lg-none" style="height: 1px;"></div>
+        <div class="col-12 col-md-6 col-lg-4 text-capitalize text-light ">
+          <div class="d-flex justify-content-center flex-column align-items-center flex-md-row">
+            <img src="images/icon-2.png" style="width: 100px;" alt="">
+            <h5 class="align-content-center ms-2 fst-italic fs-2"> vision </h5>
+          </div>
+          <div class="w-100 bg-secondary mt-4 mb-4 d-none d-lg-block" style="height: 1px;"></div>
+            <div class="list">
+              <ul class="list-unstyled text-capitalize text-light text-center">
+                <li class="mb-3"> services for all </li>
+                <li class="mb-3"> provide best services </li>
+                <li class=""> you will be better than before </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 bg-secondary mt-4 mb-4" style="height: 1px;"></div>
+        <div class="container">
+          <p class="coptright text-primary text-capitalize text-center fs-12">&copy; 2025 Space Zone. all rights reserved. designed by <strong>Eng. Sanaa Mohamed</strong></p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- End خالص ، و أخيرااااااا -->
+</body>
+</html>
